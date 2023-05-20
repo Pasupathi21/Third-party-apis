@@ -1,0 +1,41 @@
+{
+  "collectionName": "file-upload",
+  "data": [
+    {
+      "kind": "drive#file",
+      "id": "1GCS4LmSGKNUzyReiW9T51oX6SOxHYXE5",
+      "name": "Screenshot (1).png",
+      "mimeType": "image/png"
+    },
+    {
+      "kind": "drive#file",
+      "id": "1va4JYVY4cSQNW3nipyBtyy2VUQ8f2a2Z",
+      "name": "Screenshot (2).png",
+      "mimeType": "image/png"
+    },
+    {
+      "kind": "drive#file",
+      "id": "1xmOSbGK4GoYOQ1yKRHCUdUzvFkIumuHH",
+      "name": "Screenshot (3).png",
+      "mimeType": "image/png"
+    },
+    {
+      "kind": "drive#file",
+      "id": "1jdDyfQAhX00HK_3NJ9fwNRH3zKZChbqr",
+      "name": "Screenshot (4).png",
+      "mimeType": "image/png"
+    },
+    {
+      "kind": "drive#file",
+      "id": "1XQsc6Fc3yyZEMqGUWz2NDA2jPzv4eCLL",
+      "name": "Screenshot (5).png",
+      "mimeType": "image/png"
+    },
+    {
+      "kind": "drive#file",
+      "id": "1Y4TFruDaPcpTr8W_0sme3bKw7lWEOfKl",
+      "name": "big_buck_bunny_720p_1mb.mp4",
+      "mimeType": "video/mp4"
+    }
+  ]
+}

@@ -5,7 +5,7 @@ export default function AppRoutes(app: any) {
     console.log('AppRoutes')
     const route = app.Router()
 
-    route.get('/test', GoogleApiController.testFunction)
+    route.post('/file-upload', GoogleApiController.filrUploadtoGDrive)
 
     return route
 }
