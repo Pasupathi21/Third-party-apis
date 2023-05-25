@@ -3,7 +3,7 @@ import * as fs from 'fs'
 interface IReadeWriteFile {
     readPath: string;
     writePath: string;
-    writeData: Record<string, any> | Record<string, any> | string | unknown 
+    writeData: Record<string, any> | Record<string, any>[] | string | unknown 
 
 }
 export function removeFileWithPath(path: string){

@@ -6,7 +6,7 @@ class GoogleApis {
 
   constructor() {}
 
-  async filrUploadtoGDrive(req: Request | any, res: Response) {
+  async fileUploadtoGDrive(req: Request | any, res: Response) {
     const GDriveService = new GoogleDriveApiService();
     try {
       let filePath = `${__dirname}\\..\\dev-data\\file-upload.json`
@@ -30,6 +30,28 @@ class GoogleApis {
         message: e.message,
       });
     }
+  }
+
+  async deleteFiles(req: Request, res: Response) {
+    try{
+      const GDriveService = new GoogleDriveApiService();
+      await GDriveService.deleteFile()
+
+    }catch(e){
+
+    }
+  }
+
+  async getAllFiles(req: Request, res: Response) {
+    //
+  }
+
+  async getOneFile(req: Request, res: Response) {
+    //
+  }
+
+  async updateFile(req: Request, res: Response) {
+    //
   }
 }
 
