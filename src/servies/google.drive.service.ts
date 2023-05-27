@@ -101,7 +101,25 @@ export default class GoogleDriveApiService {
 
   async updateFile() {}
 
-  async deleteFile() {}
+  async deleteFile(object: Record<string,any>): Promise<any> {
+
+      return new Promise(async (resolve, reject) => {
+        try{
+         const response =  await this.drive.files.delete({
+            fieldId: object?.file?.id
+          })
+          // In delete time status only return 
+          resolve({
+            status: response?.status === ''
+          })
+        }catch(e: any){
+          reject({
+            status: false,
+            message: e.message
+          })
+        }
+      })
+  }
 
   getMimeTypeOfFile(fileOrPath: string) {
     return mime.lookup(fileOrPath);
